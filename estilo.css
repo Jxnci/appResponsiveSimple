@@ -46,7 +46,6 @@
     width: 100%;
 }
 
-
 @media only screen and (max-width: 680px){
     .nav__ul{
         display: none;
@@ -82,5 +81,4 @@
         color: #016;
         text-decoration: none;
     }
-    .nav__responsive-ul:hover
 }
