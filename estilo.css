@@ -37,13 +37,26 @@
     width: 100%;
     font-size: 25px;
     background-color: #69c;
-    margin-top: -64px;
-    margin-left: -50px;
+    margin: -64px 0px 0px 0px;
+    z-index: 100;
 }
 .nav__responsive-button{
     padding: 9px 20px;
     text-align: right;
-    width: 100%;
+    width: calc(100% - 40px);
+}
+.nav__li-container{
+    position: relative;
+    top:-1000px;
+    height: 40vh;
+    background: #9bf;
+    transition: all 1s;
+    width: 88%;
+    padding-top: 27px;
+}
+.nav__responsive-li{
+    width: 100;
+    padding: 9px 20px;
 }
 
 @media only screen and (max-width: 680px){
@@ -59,16 +72,18 @@
         position: absolute;
         width: 100%;
         background: #9bf;
-        height: 100%;
+        height: 0px;
         margin-top: 37px;
         padding-top: 27px;
+        
     }
+    
     .nav__li-container{
         position: relative;
     }
     .nav__responsive-li{
         width: 100%;
-        padding: 9px 0px;
+        padding: 9px 20px;
     }
     .nav__responsive-li i{
         box-sizing: border-box;
@@ -80,5 +95,8 @@
     .nav__responsive-li a{
         color: #016;
         text-decoration: none;
+    }
+    .nav__responsive-ul:hover>.nav__li-container{
+        top: -27px;
     }
 }
